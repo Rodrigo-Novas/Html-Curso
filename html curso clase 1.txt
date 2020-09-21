@@ -37,3 +37,4 @@ span vs div:
 	El div es para parrafos largos por ejemplo por ejemplo podria ir un <p>
 
 descargar para siguiente clase imagenes GIF SVG PNG JPG (320 x 480 hasta 1000 x 2000)
+d
