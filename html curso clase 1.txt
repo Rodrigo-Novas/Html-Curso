@@ -1,0 +1,39 @@
+Fronend: 
+ Todo elemento o funcion que puede represant el navegador in necesidad de 
+depender de un servidor para llevar a cabo dichas tareas.
+
+Backend:
+ Toda consulta que requiera de datos o resoluciones por parte del servidor
+es decir, que el navegador no las puede llevar a cabo por su cuenta.
+
+
+semantica vs gramatica : 
+SEM: significado que se le dan a los elementos de html
+
+
+Los navegadores suelen tener una hoja de estilo predeterminada
+significa que se va a ver distinto por cada navegador
+
+
+<br/> es una etiqueta huerfana porque no tiene cierre
+
+
+Etiquetas de bloque y etiquetas de linea:
+Etiquetas de bloque:
+        Aquellas que generan un salto de linea y por defecto ocupan
+        todo el ancho del contenedor y se les puede dar tamaño y funcionan
+        principalmente como elementos contenedores.
+Etiquetas de linea:
+        Aquellas que comparten linea con otras etiqueta a diferencia de las de bloque no
+        generan salto de line ay su tamaño esta definido por su contenido.
+        El ancho de las mismas es automatico y funcionan como elementos de contenido
+
+Padding:
+El padding lo que hace e darle un espacio(sangria)
+style: color: white;backgroundcolor:navy (existen 140 colores)
+
+span vs div:
+	El span es para elementos cortos(no se puede colocar un <p>)por ejemplo una palabra o una oracion
+	El div es para parrafos largos por ejemplo por ejemplo podria ir un <p>
+
+descargar para siguiente clase imagenes GIF SVG PNG JPG (320 x 480 hasta 1000 x 2000)
