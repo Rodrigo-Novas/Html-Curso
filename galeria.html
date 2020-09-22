@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+        /*Los comentatios son asi*/
+        /*en css se utiliza en selectores*/
+        body
+        {
+            margin:0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        /*selectores multiples los diferencia el uso de la coma en el medio*/
+
+        header,footer
+        {
+            color: whitesmoke;
+            background-color: tomato;            
+            
+        }
+        /*selector especifico (padre, hijo)*/
+        header h1, header p
+        {
+            margin: 0;
+            line-height: 20px;
+        }
+        nav a
+        {
+            color:white;
+            text-decoration: whitesmoke;
+        }
+
+        /*Menu a la derecha*/
+
+       nav ul
+        {
+            margin: 0px;
+            padding: 0px;
+            background-color: #36C; /*El #36C es un color en hexadecimal siempre va con numeral se puede er el hexa en color piker(buscar en google)*/
+        }
+        nav li
+        {
+            display: inline; /*Esto es para que quede en linea*/
+            padding: 5px;
+            line-height: 30px;
+        }
+
+        /*Selectores de clase y pseudoclase(hoover)*/
+
+        nav li:hover, :active /*El hover siginifica cuando le pasas ayer por enicma el mouse*/
+        {
+            background-color: blueviolet;
+        }
+        
+        .github
+        {
+            background-color: #48f;
+        }
+         /*Las clases son las que mas prioridad 
+         tienen despues vienen los id y despues los selectores multiples*/
+        #footer
+        {
+            color: #ccc;
+            background-color: #012;
+        }
+
+        /*Cuerpo principal*/
+
+        main
+        {
+            padding: 10px;
+        }
+
+    .contenido
+    {
+        padding: 10 px;
+        background-color: #36c;
+    }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header"> <!--TIene que si o si ir un h1-->
+        <h1>Fundamentos web</h1>
+        <p> &lt; HTML>; &AMP; CSS</p> <!--Se recomienda usar el ampp en lugar de &-->
+        <nav id="navegacion">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li class="active"><a href="#">Galeria</a></li> <!--El numeral solo lo que hace es recargar la pagina-->
+                <li><a href="#footer">Contacto</a></li> <!--Tambien en numeral le puedo agregar un id o clase para que vaya hasta esa seccion en este caso lo que haria es ir hasta abajo-->
+                <li><a href="https://github.com/Rodrigo-Novas" target="_blank">Github</a></li> <!--Ruta absoluta se usa para usar links de paginas externas--> <!--El target _lankse usa para que se habra el link en una pagina neuva-->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+    
+        <div class="contenido">
+            <P style="background-color: blue; overflow: hidden;">
+                <img style="width: 300px; float: left;" src="img/zorro.jpg" alt="zorro"/> <!--Src es la ruta de la imagen y alt es el texto de la imagen-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero vitae, officia corporis obcaecati molestias neque aliquid quo? Quam nihil 
+                nisi, explicabo quaerat dicta velit quidem quae sit eos cum voluptatum?
+            </P>
+        </div>
+    </main>
+
+    <footer id="footer"> <!--Suele contener los derechos del autor-->
+        <small>&copy; Todos los derechos reservados</small>
+    </footer>
+</body>
+</html>
