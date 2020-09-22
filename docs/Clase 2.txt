@@ -1,0 +1,149 @@
+Clase 2:
+
+Se usa <a> para colocar hipervinculos
+
+
+ej:
+
+<div id="main">
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="#">Galeria</a></li> <!--El numeral solo lo que hace es recargar la pagina-->
+            <li><a href="#footer">Inicio</a></li> <!--Tambien en numeral le puedo agregar un id o clase para que vaya hasta esa seccion en este caso lo que haria es ir hasta abajo-->
+            <li></li>
+        </ul>
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+
+Rutas relativas:	A partir de la posicion que estamos parados buscamos donde hay que ir para poder acceder ahi
+
+ej:
+	../carpeta/archivo.txt
+
+
+
+Rutas absolutas:	Rutas completas de donde se encuentra el archivo, se usa para hacer referencia a otro sitio web
+
+
+
+si queremos que se habra el link en una pagina nueva usamos target="_blank" o target="_new" (solo para paginas nuevas, no para internas de la web)
+
+
+
+Reglas de nomenclatura: 
+
+	1)Evitar el uso de espacios porque el caracter epacio es remplazado por el caracter %20 por lo tanto si la imagen
+se llama "foto 01.jpg" el navegador lo interpretara como nombre "foto%01.jpg" impidiendo que encuentre dicho elemento
+
+¿Como se evita? se aconseja utilizar guines en lugar de espacios para separar palabras, dando como resultado "foto-01.jpg" que si son permitidos
+
+
+	2)Utilizar nombres descriptivos para que sea mucho mas facil la implemenacion de los elementos no trabajar con nombres automatizados como "2020-0921-1952280003.jpg"
+se debe utilizar nombres desciptivos como "perro-jugando.jpg" "montañas-moviendose.png". La importancia de la imagen se da con mayusculas por ejemplo es mas importante usar PERRITOS-JUGANDO.JOG A perritos-jugando.jpg
+
+
+
+CLASES VS ID
+
+	Las clases son para elementos mas generales, por ejemplo una nacionalidad al ser compartida por varios habitantes es una clase, algo compartido.
+		y un dni seria un id, ya que es une elemto unico e irrepetible para un solo elemento.
+
+
+Insertar imagenes:
+ej:
+ <img src="img/zorro.jpg" alt="zorro"/> <!--Src es la ruta de la imagen y alt es el texto de la imagen-->
+
+
+En las imagens si o si es necesario usar css para adecuarlas, EN EL CASO DE IR UNA IMAGEN CON UN TEXTO PARA QUE ESTA PUEDA IR EN UNA POSICION ADECUADA SE USA EL ATRIBUTO FLOAT
+
+ej:
+	<img style="width: 300px; float: left;" src="img/zorro.jpg" alt="zorro"/> <!--Src es la ruta de la imagen y alt es el texto de la imagen-->
+
+
+
+Etiquetas de bloque:
+	Arriba de todo
+	<header> 
+	Dentro del header
+	<NAV>: Es para links mas importantes por ejemplo preguntas y respuestas categoria etc son los links de navegacion no se debe repetir solo se debe usar una vez
+
+	Dentro del main
+	<Article>: Corresponde al contenido independiente aplica a las noticias
+	<Section>: Coresponde al contenido que solamente funciona dentro de la apgina y si las sacamos pierde contexto
+	<ASIDE>: Es para por ejemplo publicidad es para contenido, son por ejemplo las sugerencias de youtube  
+	
+	Final de todo
+	<footer>
+
+
+
+CSS: Se representan por la etiqueta style se usan SELECTORES COMO #clases, .id, HEADER H1, H2 ,ETC
+
+Ej:
+
+    /*Los comentatios son asi*/
+        /*en css se utiliza en selectores*/
+        body
+        {
+            margin:0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        /*selectores multiples los diferencia el uso de la coma en el medio*/
+
+        header,footer
+        {
+            color: whitesmoke;
+            background-color: tomato;            
+            
+        }
+        /*selector especifico (padre, hijo)*/
+        header h1, header p
+        {
+            margin: 0;
+            line-height: 20px;
+        }
+        nav a
+        {
+            color:white;
+            text-decoration: whitesmoke;
+        }
+
+        /*Menu a la derecha*/
+
+       nav ul
+        {
+            margin: 0px;
+            padding: 0px;
+            background-color: #36C; /*El #36C es un color en hexadecimal siempre va con numeral se puede er el hexa en color piker(buscar en google)*/
+        }
+        nav li
+        {
+            display: inline; /*Esto es para que quede en linea*/
+            padding: 5px;
+            line-height: 30px;
+        }
+
+        /*Selectores de clase y pseudoclase(hoover)*/
+
+        nav li:hover, :active /*El hover siginifica cuando le pasas ayer por enicma el mouse*/
+        {
+            background-color: blueviolet;
+        }
+        
+        .github
+        {
+            background-color: #48f;
+        }
+         /*Las clases son las que mas prioridad 
+         tienen despues vienen los id y despues los selectores multiples*/
+        #footer
+        {
+            color: #ccc;
+        }
