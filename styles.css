@@ -1,0 +1,90 @@
+/*Reglas generales*/
+body
+{
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Encabezado y pue de pagina*/
+    #header, .header, #footer
+    {
+        color: whitesmoke;
+        background-image: linear-gradient(120deg, #36c, #124);
+        padding: 16px;
+    }
+    .header
+    {
+        padding:8px 8px; /*Top Right - Bottom Left*/
+    }
+/*Barra de navegacion*/
+    .menu
+    {
+        background-color: #248;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 90px;
+        line-height: 32px;
+    }
+
+    .menu li:hover
+    {
+        background-color: #36c;
+
+    }
+
+    .menu a{
+        color: #cccccc;
+        text-decoration: blueviolet;
+    }
+/*Contenido de navegacion*/
+
+/*Contenido Principal*/
+main{
+    padding: 16px;
+}
+/*Formulario de contacto*/
+
+    #contacto
+    {
+        width: 450px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contacto input, #contacto textarea
+    {
+        width: 430px;
+        border: 0;
+        outline:  none;
+        padding: 5px 10px;
+    }
+
+    #contacto textarea
+    {
+        resize:none;
+        height: 64px;
+    }
+
+
+    #contacto button
+    {
+        float: right;
+        border: 2px;
+        color: white;
+        background-color: transparent;
+
+    }
+
+    #contacto button:hover
+    {
+        background-color: tomato;
+      
+    }
